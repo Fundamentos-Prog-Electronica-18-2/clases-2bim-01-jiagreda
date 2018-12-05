@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int obtenerTablaMultiplicar(int valor_tabla,int limite){
+void obtenerTablaMultiplicar(int valor_tabla,int limite){
     int contador = 1;
     while(contador <= limite){
 
@@ -9,15 +9,13 @@ int obtenerTablaMultiplicar(int valor_tabla,int limite){
         cout << valor_tabla <<" * " <<contador <<" = " << operacion << endl;
         contador = contador + 1;
     }
-    return 0;
 }
-int obtenerTablaSumar(int valor_tabla,int limite){
+void obtenerTablaSumar(int valor_tabla,int limite){
     for(int i = 1 ; i <= limite; i++){
 
         int operacion = valor_tabla + i;
         cout << valor_tabla <<" + " <<i <<" = " << operacion << endl;
     }
-    return 0;
 }
 int main()
 {
